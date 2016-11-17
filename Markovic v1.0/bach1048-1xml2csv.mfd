@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="21">
+	<resources/>
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="Mozart40" library="text" uid="3" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="1226" lty="8" rbx="1446" rby="208"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" inpkey="1" expanded="1">
+										<entry name="Note" inpkey="2"/>
+										<entry name="Octave" inpkey="3"/>
+										<entry name="Duration" inpkey="4"/>
+										<entry name="Type" inpkey="13"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" outputinstance="mozart40.txt" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="," quote="&quot;" firstrownames="false" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Note" type="string"/>
+									<field1 name="Octave" type="integer"/>
+									<field2 name="Duration" type="integer"/>
+									<field3 name="Type" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="is-null" library="db" uid="15" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="610" lty="-23" rbx="673" rby="16"/>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="33"/>
+					</targets>
+					<view ltx="789" lty="256" rbx="827" rby="274"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="18" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="34"/>
+						<datapoint pos="1" key="35"/>
+						<datapoint pos="2" key="36"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="37"/>
+					</targets>
+					<view ltx="901" lty="256" rbx="998" rby="332"/>
+				</component>
+				<component name="is-null" library="db" uid="17" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="31"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="610" lty="317" rbx="673" rby="356"/>
+				</component>
+				<component name="if-else" library="core" uid="8" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="20"/>
+						<datapoint pos="2" key="27"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="882" lty="-23" rbx="979" rby="53"/>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="780" lty="92" rbx="827" rby="110"/>
+					<data>
+						<constant value="S" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="partwise" library="xml" uid="21" kind="14">
+					<properties/>
+					<view ltx="124" lty="8" rbx="293" rby="208"/>
+					<data>
+						<root scrollposition="791">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="score-partwise" expanded="1">
+										<entry name="part" expanded="1">
+											<entry name="measure" expanded="1">
+												<entry name="note" outkey="62" expanded="1">
+													<entry name="pitch" expanded="1">
+														<entry name="step" expanded="1">
+															<entry name="#text" outkey="63"/>
+														</entry>
+														<entry name="octave" expanded="1">
+															<entry name="#text" outkey="64"/>
+														</entry>
+													</entry>
+													<entry name="duration" expanded="1">
+														<entry name="#text" outkey="65"/>
+													</entry>
+													<entry name="type" expanded="1">
+														<entry name="#text" outkey="66"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://www.musicxml.org/dtds/partwise.dtd" inputinstance="bwv1048-1.xml" outputinstance="bwv1048-1.xml" instanceroot="{}score-partwise"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="20" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="2" edgekey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="19" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="34" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="35" edgekey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="3" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="1" edgekey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="29" edgekey="68"/>
+							<edge vertexkey="27" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="31" edgekey="70"/>
+							<edge vertexkey="36" edgekey="71"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="65">
+						<edges>
+							<edge vertexkey="4" edgekey="72"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="13" edgekey="73"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
